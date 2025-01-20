@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포트폴리오</title>
+    <script defer src="/script/index.js"></script>
+    <link href="/style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div class="welcome-message">Welcome to my portfolio!</div>
+    <div id="header-content">
+        <nav class="nav-menu">
+            <a href="#introduction" class="menu-button">자기소개</a>
+            <a href="#skills" class="menu-button">기술</a>
+            <a href="#projects" class="menu-button">프로젝트</a>
+        </nav>
+    </div>
+</header>
+
+<section class="image-section">
+    <img src="/img/intro-image.jpg" alt="Intro Image" class="intro-image">
+    <div class="overlay">
+        <h1>안녕하세요.</h1>
+        <h2>신입 백엔드 개발자 김종욱 입니다.</h2>
+    </div>
+</section>
+
+<main>
+    <div id="introduction"></div>
+    <section class="info-archive-section">
+        <div class="box info-box">
+            <h3>내 정보</h3>
+            <ul>
+                <li>
+                    <span class="bold">이름</span>
+                    <span class="text-info">김종욱</span>
+                </li>
+                <li>
+                    <span class="bold">연락처</span>
+                    <span class="text-info">010-8904-5409</span>
+                </li>
+                <li>
+                    <span class="bold">생년월일</span>
+                    <span class="text-info">2000.10.26</span>
+                </li>
+                <li>
+                    <span class="bold">이메일</span>
+                    <span class="text-info">kydmsqls@naver.com</span>
+                </li>
+                <li>
+                    <span class="bold">학력</span>
+                    <span class="text-info">경일대학교</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box archive-box">
+            <h3>아카이브</h3>
+            <div class="box-wrapper">
+                <a href="https://github.com/kimjonguk1" target="_blank">
+                    <div class="content-wrapper">
+                        <img src="/img/github_.png" alt="github">
+                        <span class="text">프로젝트 집합소</span>
+                    </div>
+
+                </a>
+                <a href="https://tricky-bloom-e01.notion.site/JongWookKim-127221d78586806da7aff66a0ecf4782?pvs=4"
+                   target="_blank">
+                    <div class="content-wrapper">
+                        <img src="/img/notion_.png" alt="notion">
+                        <span class="text">공부 목적의 노션</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="skills"></div>
+        <div class="box stack-box" >
+            <h3>기술 스택</h3>
+            <div class="stack">
+                <div class="stack-image">
+                    <span class="stack-bold">Frontend</span>
+                    <img src="/img/stack-img/html.png" alt="html">
+                    <img src="/img/stack-img/css.png" alt="css">
+                    <img src="/img/stack-img/scss.png" alt="scss">
+                    <img src="/img/stack-img/js.png" alt="js">
+                    <img src="/img/stack-img/React.png" alt="React">
+                </div>
+                <div class="stack-image">
+                    <span class="stack-bold">Backend&nbsp;</span>
+                    <img src="/img/stack-img/java.png" alt="java">
+                    <img src="/img/stack-img/nodejs.png" alt="nodejs">
+                    <img src="/img/stack-img/SpringBoot.png" alt="Springboot">
+                </div>
+                <div class="stack-image">
+                    <span class="stack-bold">DB</span>
+                    <img style="margin-left: 4.5rem" src="/img/stack-img/mariaDB.png" alt="mariaDB">
+                    <img src="/img/stack-img/mongoDB.png" alt="mongoDB">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="projects"></div>
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <div class="carousel_item">
+                <img src="/img/project-img/project-1.jpg.png"/>
+                <div class="text-container">
+                    <span class="carousel-bold">장애인을 위한 검색 서비스</span>
+                    <span class="carousel-text">키보드를 사용하지 않는 원 버튼 아키네이터이며,<br> 손이 불편하거나 타자가 익숙치 않은 연령층을 위한 검색 사이트입니다.</span>
+                    <span class="carousel-stack">React, Node.js, Google Cloud Function</span>
+                    <a href="https://github.com/JunDeve/Disabilities-Search-Service" target="_blank" class="project-link">github 링크</a>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <img src="/img/project-img/project-2.png"/>
+                <div class="text-container">
+                    <span class="carousel-bold">날씨 정보 검색 사이트</span>
+                    <span class="carousel-text">사용자가 원하는 지역의 날씨 정보를 불러올 수 있는 사이트입니다. <br>OpenWeather API를 사용하였으며,<br> 현재 날씨에 어울리는 배경 영상을 추가했습니다. </span>
+                    <span class="carousel-stack">Html, Css, JS</span>
+                    <a href="https://github.com/kimjonguk1/weather_information" target="_blank" class="project-link">github 링크</a>
+                </div>
+            </div>
+
+            <div class="carousel_item">
+                <img src="/img/project-img/project-3.png"/>
+                <div class="text-container">
+                    <span class="carousel-bold">CGV 클론 사이트</span>
+                    <span class="carousel-text">영화 정보 및 예매사이트인 CGV 웹 사이트를 클론하여 만들었습니다.</span>
+                    <span class="carousel-stack">Html, Scss, JS, JAVA, SpringBoot</span>
+                    <a href="https://github.com/kimjonguk1/JGV" target="_blank" class="project-link">github 링크</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev" type="button">prev</button>
+        <button class="next" type="button">next</button>
+    </div>
+</main>
+<footer>
+    <div id="footer-content">
+        <span>© 2024. Kim Jong Wook. All rights reserved.</span>
+    </div>
+</footer>
+</body>
+</html>
